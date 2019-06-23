@@ -1,0 +1,28 @@
+Given an array of positive integers where every element appears even times except for one. Find that number occuring odd number of times.
+
+Input:
+First line will consist  a number T, the number of test cases. Each test case will then consist of an integer N denoting the size of array. Next line will consist of N space separated integers, the array elements.
+
+Output:
+Print the element that appears odd times in the array.
+
+Constraints:
+1 <= T <= 30
+1 <= N <= 107
+0 <= Ai <= 108
+
+Example:
+Input:
+2
+5
+1 1 2 2 2
+7
+8 8 7 7 6 6 1
+
+Output:
+2
+1
+
+Explanation:
+Testcase 1: In the given array 1 is present even number of times and 2 is present odd number of times.
+
