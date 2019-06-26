@@ -1,0 +1,30 @@
+Given an array A that contains N integers (may be positive, negative or zero). Find the product of the maximum product subarray.
+
+Input:
+First line of input contain number of test cases T. First line of test case contain the size of array and second line of test case contain the array elements.
+
+Output:
+Output the maximum product of subarray.
+
+Constraints:
+1 <= T <= 100
+1 <= N <= 104
+-102 <= Ai <= 102
+
+Example:
+Input:
+3
+5
+6 -3 -10 0 2
+6
+2 3 4 5 -1 0 
+10
+8 -2 -2 0 8 0 -6 -8 -6 -1
+
+Output:
+180
+120
+288
+
+Explanation:
+Testcase 1: Subarray with maximum product is 6, -3, -10 which gives product as 180. 
