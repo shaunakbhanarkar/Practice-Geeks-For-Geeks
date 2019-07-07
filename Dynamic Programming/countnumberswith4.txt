@@ -1,0 +1,30 @@
+Count the numbers between 1 to N containing 4 as a digit.
+
+Input:
+
+Each line will contain the number of test cases T.
+Each test case will contain a number N.
+
+Output:
+
+Print the count of numbers for each test case in a separate line.
+
+Constraints:
+
+1<=T<=100
+
+1<=N<=10^6
+
+Example:
+
+Input:
+
+2
+9
+3
+
+Output:
+
+1
+0
+
