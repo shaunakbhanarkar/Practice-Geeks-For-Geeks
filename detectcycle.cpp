@@ -14,6 +14,10 @@ bool dfs(int start, int nodes,int parent)
     
     bool ans = false;
     
+    if (graph[start][start] == 1)
+    {
+        return true;
+    }
     for (int i=0;i<nodes;i++)
     {
         if (graph[start][i] == 1 && vis[i] == 1 && parent != i)
@@ -55,10 +59,16 @@ int main()
         graph[v][u] = 1;
     }
     
-    int start;
-//    cin>>start;
-    start = 0;
-    if (dfs(start, nodes, start))
+    bool ans = false;
+    for (int i=0; i<nodes; i++)
+    {
+        if (vis[i] == 0)
+        {
+            ans = ans || dfs(i,nodes,i);
+        }
+    }
+    
+    if (ans)
         cout<<"cycle detected";
     else
         cout<<"cycle not found";
