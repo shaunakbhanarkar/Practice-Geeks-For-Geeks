@@ -10,6 +10,8 @@ bool dfs(int start, vector<int> adj[], bool vis[], int parent)
     bool ans = false;
     for (int i=0;i<adj[start].size();i++)
     {
+        if (adj[start][i] == start)
+            return true;
         if (vis[adj[start][i]] == true && parent != adj[start][i])
         {
             return true;
@@ -44,11 +46,15 @@ int main()
         adj[v].push_back(u);
     }
     
-    int start;
-//    cin>>start;
-    start = 0;
+    bool ans = false;
+    for (int i=0;i<nodes;i++)
     
-    if(dfs(start,adj,vis, start))
+    {
+        if (vis[i] == false)
+            ans = ans || dfs(i,adj,vis,i);
+    }
+    
+    if(ans)
         cout<<"cycle detected"<<endl;
     else
         cout<<"cycle not found"<<endl;
