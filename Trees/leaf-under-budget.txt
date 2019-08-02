@@ -1,0 +1,42 @@
+Given a binary tree and a budget. Assume you are at the root of the tree(level 1), you need to maximise the count of leaf nodes you can visit in your budget if the cost of visiting a leaf node is equal to the level of that leaf node.
+
+Input Format: 
+The function takes two arguments as input, the reference pointer to the root of the binary tree and a variable budget denoting the budget provided to you.
+There will be T test cases and for each test case the function will be called separately.
+
+Output Format:
+For each test case output the total of number of the leaf nodes you can visit in the provided budget.
+
+Your Task:
+You don't need to read input/output. Just complete the function getCount that takes root node and budget as input.
+
+Constraints:
+1<=T<=100
+1<=N<=100
+1<=budget<=100
+
+Example:
+Input:
+1
+6
+10 8 L 8 3 L 10 2 R 2 3 L 3 4 R 2 6 R
+8
+Output:
+2
+Explanation:
+TestCase 1:
+Binary Tree is as:
+                  10
+                /       \
+              8         2
+            /         /       \
+          3        3         6
+                       \
+                        4  
+Cost For visiting Leaf Node 3: 3(level)
+Cost For visiting Leaf Node 4: 4(level)
+Cost For visiting Leaf Node 6: 3(level)
+In budget one can Max 2 Leaf Nodes.
+
+Note:The Input/Ouput format and Example given are used for system's internal purpose, and should be used by a user for Expected Output only. As it is a function problem, hence a user should not read any input from stdin/console. The task is to complete the function specified, and not to write the full code.
+
