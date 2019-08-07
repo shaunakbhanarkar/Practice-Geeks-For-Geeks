@@ -1,0 +1,22 @@
+Given a String, find the longest palindromic subsequence
+
+Input:
+The first line of input contains an integer T, denoting no of test cases. The only line of each test case consists of a string S(only lowercase)
+
+Output:
+Print the Maximum length possible for palindromic subsequence.
+
+Constraints:
+1<=T<=100
+1<=|Length of String|<=1000
+ 
+
+Examples:
+Input:
+2
+bbabcbcab
+abbaab
+Output:
+7
+4
+
