@@ -1,0 +1,7 @@
+Amazon SDE Interview Experience | On Campus 2019
+
+Round 1:
+
+The round 1 was an online coding round. There were 2 coding questions and 28 technical mcq’s to solved in 90 minutes. My coding questions were:-
+
+There are n baskets containing apples. Input consists of a given array which represents number of apples in each basket. Find the minimum number of apples to be moved in order to make no. of apples in each basket equal.
