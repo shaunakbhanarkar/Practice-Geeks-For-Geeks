@@ -1,0 +1,25 @@
+Infix : An expression is called the Infix expression if the operator appears in between the operands in the expression. Simply of the form (operand1 operator operand2).
+Example : (A+B) * (C-D)
+
+Prefix : An expression is called the prefix expression if the operator appears in the expression before the operands. Simply of the form (operator operand1 operand2).
+Example : *+AB-CD (Infix : (A+B) * (C-D) )
+
+Given an Infix expression, convert it into a Prefix expression using two stacks.
+
+Examples:
+
+Input : A * B + C / D
+Output : + * A B/ C D 
+
+Input : (A - B/C) * (A/K-L)
+Output : *-A/BC-/AKL
+Recommended : Please try your approach first on IDE and then look at the solution.
+
+The idea is to use one stack for storing operators and other to store operands. The stepwise algo is:
+
+Traverse the infix expression and check if given character is an operator or an operand.
+If it is an operand, then push it into operand stack.
+If it is an operator, then check if priority of current operator is greater than or less than or equal to the operator at top of the stack. If priority is greater, then push operator into operator stack. Otherwise pop two operands from operand stack, pop operator from operator stack and push string operator + operand1 + operand 2 into operand stack. Keep popping from both stacks and pushing result into operand stack until priority of current operator is less than or equal to operator at top of the operator stack.
+If current character is ‘(‘, then push it into operator stack.
+If current character is ‘)’, then check if top of operator stack is opening bracket or not. If not pop two operands from operand stack, pop operator from operator stack and push string operator + operand1 + operand 2 into operand stack. Keep popping from both stacks and pushing result into operand stack until top of operator stack is an opening bracket.
+The final prefix expression is present at top of operand stack.
