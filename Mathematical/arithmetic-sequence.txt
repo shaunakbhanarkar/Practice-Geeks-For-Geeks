@@ -1,0 +1,24 @@
+Given three integers  'A' denoting the first term of an arithmetic sequence , 'C' denoting the common difference of an arithmetic sequence and an integer 'B'. you need to tell whether 'B' exists in the arithmetic sequence or not.
+
+Input
+First line of input contains of an integer 'T' denoting number of test cases. Then T test cases follow . Each test case contains three integers A,B,C.  Only line of each test case contains three integers A,B and C .
+
+Output
+For each case in a new line print 1 if B is found in sequence else print 0 if B is not found in sequence .
+
+Constraints:
+1<=t<=100
+- 10^9 ≤ A, B, C ≤ 10^9
+
+
+Example:
+
+Input:
+
+2
+1 7 3
+1 2 3
+
+Output:
+1
+0
